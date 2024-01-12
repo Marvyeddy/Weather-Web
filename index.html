@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/output.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class=" card mx-auto my-20 rounded-lg px-10 py-5 max-w-[470px]">
+        <div class="w-[100%] flex items-center justify-between mt-4 relative">
+            <input type="text" placeholder="Enter city name" spellcheck="false"
+                class="h-8 p-5 rounded-3xl outline-none w-[300px] mx-auto font-medium">
+            <button class="bg-white w-9 rounded-[50%] h-9 absolute left-[300px]">
+                <img src="static/images/search.png" class="h-6 w-5 mx-auto">
+            </button>
+        </div>
+
+        <p class="text-center mt-5 font-semibold text-white hidden error">Invalid City Name</p>
+
+        <div class="weather hidden">
+            <img src="static/images/drizzle.png" class="w-[150px] mt-6 mx-auto" id="weather">
+            <h1 class="text-5xl font-semibold text-white mt-5 mx-[25%] text-center" id="temperature">27⁰C</h1>
+            <h2 class="text-4xl font-semibold text-white mt-4 mx-[25%] mb-7 text-center" id="name">New York</h2>
+
+            <div class="flex justify-between">
+                <div class="flex items-center gap-3">
+                    <img src="static/images/humidity.png" class="w-[40px] h-[30px]">
+                    <div>
+                        <h2 class="text-xl font-semibold text-white " id="humid">30%</h2>
+                        <p class="text-xl font-medium text-white">Humidity</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-3">
+                    <img src="static/images/wind.png" class="w-[40px] h-[30px]">
+                    <div>
+                        <h2 class="text-xl font-semibold text-white " id="wind">30km/h</h2>
+                        <p class="text-xl font-medium text-white">Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

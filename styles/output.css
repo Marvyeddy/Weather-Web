@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background-color: #222;
+}
+
+.card{
+    background: linear-gradient(to right, rgb(209, 110, 209), rgba(66, 0, 128, 0.596));
+}
